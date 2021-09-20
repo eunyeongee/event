@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021년 풍성한 한가위 보내세요!</title>
+    <link rel="shortcut icon" href="https://www.favicon.cc/logo3d/430581.png">
+
+    <meta property="og:image" content="https://ifh.cc/g/zTcygk.png">
+<meta property="og:title" content="편지를 열어봐">
+<meta property="og:description" content="은영이가 보낸 편지를 열어보세요!">
+
+   <!-- <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>-->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Do Hyeon', sans-serif;
+        }
+
+        body {
+            background-image: url('https://t1.daumcdn.net/cfile/tistory/262D0E3F524D89BB09');
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+
+
+        }
+
+        .envelope-msg {
+            color: #fff;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+
+        }
+
+        .rtan {
+            background-color: #fff;
+
+            width: 190px;
+            height: 190px;
+
+            background-image: url('https://blog.kakaocdn.net/dn/bZsve2/btqBjVJ9oiZ/mSkDV8TuJ0WiPZ3oYBKMJ0/img.gif');
+            background-size: cover;
+            background-position: center;
+            
+
+            margin: 100px auto 0px auto;
+
+            border-radius: 50%;
+
+            box-shadow: 0px 0px 10px 5px #fff;
+
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-weight: normal;
+
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        .messagebox {
+            background-color: ivory;
+
+            width: 350px;
+            margin: auto;
+
+            color: #000;
+
+            padding: 30px;
+
+            font-size: 20px;
+            line-height: 30px;
+
+            box-shadow: 0px 0px 10px 0px #fff;
+
+        }
+
+        .from {
+            text-align: right;
+
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 760px) {
+
+            .messagebox {
+                width: 250px;
+                padding: 20px;
+            }
+
+            .rtan {
+
+
+                width: 140px;
+                height: 140px;
+
+                background-image: url('https://blog.kakaocdn.net/dn/bZsve2/btqBjVJ9oiZ/mSkDV8TuJ0WiPZ3oYBKMJ0/img.gif');
+                background-size: cover;
+                background-position: center;
+
+                margin: 70px auto 0px auto;
+
+
+            }
+
+            h1 {
+
+                font-size: 28px;
+            }
+
+            .envelope {
+                
+                margin: 150px auto 0px auto;
+            }
+
+        }
+    </style>
+
+    <script>
+        function open_letter() {
+                document.getElementsByClassName("letter-close")[0].style.display = 'none'
+                document.getElementsByClassName("letter-open")[0].style.display = 'block'
+
+            }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="letter-close">
+
+        <div class="envelope" onclick="open_letter()">
+        </div>
+        <h2 class="envelope-msg">편지를 열어봐!</h2>
+
+    </div>
+
+    <div class="letter-open">
+        <div class="rtan">
+
+        </div>
+        <h1>2021년 풍성한 한가위 되세요!</h1>
+        <div class="messagebox">
+            올추석에도 소중한 분들의<br>
+            건강을 기원하며 보름달처럼<br>
+            풍성하고 행복한 추석<br>
+            보내시길 바랍니다.<br>
+            언제나 함께해주셔서 감사합니다.<br>
+
+            2021년 행복한 한가위 되세요!
+           <!-- <p class="from"> 2021.09.20 은영이가</p>-->
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
