@@ -130,14 +130,7 @@
             transform: translateX(-50%);
             display: flex;
             gap: 10px;
-            opacity: 0;
-            pointer-events: none;
             transition: opacity 0.3s;
-        }
-
-        .controls.show {
-            opacity: 1;
-            pointer-events: auto;
         }
 
         button {
@@ -214,7 +207,7 @@
             </div>
         </div>
         <div class="controls" id="controls">
-            <button id="toggleBtn">Close</button>
+            <button id="toggleBtn">Open</button>
         </div>
     </div>
 
@@ -227,15 +220,15 @@
 
         function updateButton() {
             if (page.classList.contains('open')) {
-                controls.classList.add('show');
                 contents.classList.add('show');
                 invitation.parentElement.classList.add('open');
                 invitation.classList.add('open');
+                toggleBtn.textContent = 'Close';
             } else {
-                controls.classList.remove('show');
                 contents.classList.remove('show');
                 invitation.parentElement.classList.remove('open');
                 invitation.classList.remove('open');
+                toggleBtn.textContent = 'Open';
             }
         }
 
@@ -252,6 +245,13 @@
 
         // 초기 상태 설정
         updateButton();
+
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                page.classList.add('open');
+                updateButton();
+            }, 3000);
+        });
     </script>
 </body>
 </html>
